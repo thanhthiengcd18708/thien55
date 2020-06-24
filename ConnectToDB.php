@@ -13,10 +13,10 @@ echo "ATN COMPANY !";
 
 
 if (empty(getenv("DATABASE_URL"))){
-    echo '<p></p>';
+   
     $pdo = new PDO('pgsql:host=localhost;port=5432;dbname=mydb', 'postgres', '123456');
 }  else {
-     echo '<p></p>';
+     
      echo getenv("dbname");
    $db = parse_url(getenv("DATABASE_URL"));
    $pdo = new PDO("pgsql:" . sprintf(
