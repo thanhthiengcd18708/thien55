@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <head>
-<title>Insert data to PostgreSQL with php - creating a simple web application</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<style>
-li {
-list-style: none;
-}
-</style>
-</head>
+<head>
+	<title>Insert product</title>
+	<link rel="stylesheet" type="text/css" href="Login.css">
 <body>
-<h1>INSERT DATA TO DATABASE</h1>
-<h2>Enter data into student table</h2>
-<ul>
-    <form name="InsertData" action="InsertData.php" method="POST" >
-<li>product ID:</li><li><input type="text" name="productid" /></li>
-<li>produc tname:</li><li><input type="text" name="productname" /></li>
-<li>size:</li><li><input type="text" name="size" /></li>
-<li>basicprice:</li><li><input type="text" name="basicprice" /></li>
-<li>residual:</li><li><input type="text" name="residual" /></li>
-<li><input type="submit" /></li>
-</form>
-</ul>
+    <form class="box" action="InsertData.php" method="post">
+		<h1>Insert Product</h1>
+		<input class="signup" type="text" name="productid" placeholder="Product id">
+		<input class="signup" type="text" name="productname" placeholder="Product name">
+		<input class="signup" type="text" name="size" placeholder="Size">
+		<input class="signup" type="text" name="basicprice" placeholder="Basic price">
+		<input class="signup" type="text" name="residual" placeholder="Residual">
+		<input class="signup" type="submit" name="" value="submit">
+    </div>
+	</form> 
+	
+
+</body>
+</html>
+
 
 <?php
 
@@ -34,9 +31,8 @@ if (empty(getenv("DATABASE_URL"))){
    $pdo = new PDO("pgsql:" . sprintf(
                 "host=
 
-ec2-34-197-188-147.compute-1.amazonaws.com
-
-;port=5432;user=bvztajjyxcwfgb;password=95afa25f8872b3a2bf6cd1f19c1e74a4148450363e9bcecdc61a254a208ed85e;dbname=d4s6q2430j68ed",
+ec2-54-159-138-67.compute-1.amazonaws.com
+;port=5432;user=rkrzoettivdipj;password=8ebcd42b31944fc146f96a2bd6ed4a0cabad45874d178c339f8d323b93b5a136;dbname=d54te445aufu0s",
         $db["host"],
         $db["port"],
         $db["user"],

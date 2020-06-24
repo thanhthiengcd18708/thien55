@@ -37,7 +37,7 @@ $stmt = $pdo->prepare($sql);
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $stmt->execute();
 $resultSet = $stmt->fetchAll();
-echo '<p>productinformation:</p>';
+echo '<p>Product Information </p>';
 
 ?>
 <div id="container">
