@@ -25,7 +25,7 @@
                 <li> <a href="InsertData.php">Insert</a></li>
                 <li> <a href="#">Delete</a></li>
                 <li> <a href="#">Update</a></li>
-                <li> <a href="#">View</a></li>
+                <li> <a href="ConnectToDB.php">View</a></li>
                 <li> <a href="#">Sell Of</a></li>
                 <li> <a href="#">Product</a></li>
                 <li> <a href="Page2(click on All product).html">All Products</a></li>
