@@ -10,7 +10,7 @@
 		<input class="signup" type="text" name="productname" placeholder="Product name">
 		<input class="signup" type="text" name="price" placeholder="Price">
 		<input class="signup" type="submit" name="" value="Submit">
-	            <li class= "signup"> <a href="index.php" >Home</a></li>
+	        <div class= "home">    <li> <a href="index.php" >Home</a></li> </div>
 	
     </div>
 	</form> 
