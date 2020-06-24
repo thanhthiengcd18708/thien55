@@ -9,7 +9,9 @@
 		<input class="signup" type="text" name="productid" placeholder="Product id">
 		<input class="signup" type="text" name="productname" placeholder="Product name">
 		<input class="signup" type="text" name="price" placeholder="Price">
-		<input class="signup" type="submit" name="" value="submit">
+		<input class="signup" type="submit" name="" value="Submit">
+	            <li class= "signup"> <a href="index.php" >Home</a></li>
+	
     </div>
 	</form> 
 	
@@ -44,15 +46,7 @@ if($pdo === false){
      echo "ERROR: Could not connect Database";
 }
 
-//Khởi tạo Prepared Statement
-//$stmt = $pdo->prepare('INSERT INTO student (stuid, fname, email, classname) values (:id, :name, :email, :class)');
 
-//$stmt->bindParam(':id','SV03');
-//$stmt->bindParam(':name','Ho Hong Linh');
-//$stmt->bindParam(':email', 'Linhhh@fpt.edu.vn');
-//$stmt->bindParam(':class', 'GCD018');
-//$stmt->execute();
-//$sql = "INSERT INTO student(stuid, fname, email, classname) VALUES('SV02', 'Hong Thanh','thanhh@fpt.edu.vn','GCD018')";
 $sql = "INSERT INTO product(productid, productname,price)"
         . " VALUES('$_POST[productid]','$_POST[productname]','$_POST[price]')";
 $stmt = $pdo->prepare($sql);
