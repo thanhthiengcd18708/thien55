@@ -8,7 +8,7 @@
 		<h1>Insert Product</h1>
 		<input class="signup" type="text" name="productid" placeholder="Product id">
 		<input class="signup" type="text" name="productname" placeholder="Product name">
-		<input class="signup" type="text" name="size" placeholder="Price">
+		<input class="signup" type="text" name="price" placeholder="Price">
 		<input class="signup" type="submit" name="" value="submit">
     </div>
 	</form> 
@@ -53,8 +53,8 @@ if($pdo === false){
 //$stmt->bindParam(':class', 'GCD018');
 //$stmt->execute();
 //$sql = "INSERT INTO student(stuid, fname, email, classname) VALUES('SV02', 'Hong Thanh','thanhh@fpt.edu.vn','GCD018')";
-$sql = "INSERT INTO product(productid, productname,size, basicprice,residual)"
-        . " VALUES('$_POST[productid]','$_POST[productname]','$_POST[price]',)";
+$sql = "INSERT INTO product(productid, productname,price)"
+        . " VALUES('$_POST[productid]','$_POST[productname]','$_POST[price]')";
 $stmt = $pdo->prepare($sql);
 //$stmt->execute();
  if (is_null($_POST[productid])) {
