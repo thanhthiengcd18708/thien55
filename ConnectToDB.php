@@ -3,7 +3,6 @@
 <body>
 
 <h1>TABLE OF INFORMATION PRODUCT </h1>
-	<link rel="stylesheet" type="text/css" href="Login.css">
 
 <?php
 ini_set('display_errors', 1);
@@ -41,17 +40,16 @@ $resultSet = $stmt->fetchAll();
 echo '<p>Product Information </p>';
 
 ?>
-<p>Sort Table Rows by Clicking on the Table Headers - Ascending and Descending (jQuery)</p>
-<div class="container">
-	
-	<div class="table">
-		<div class="table-header">
-			<div class="header__item"><a id="productid" class="filter__link" href="#">Product ID</a></div>
-			<div class="header__item"><a id="name" class="filter__link filter__link--number" href="#">Name</a></div>
-			<div class="header__item"><a id="Price" class="filter__link filter__link--number" href="#">Price</a></div>
-		</div>
-	</div>
-</div>
+<div id="container">
+<table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Product ID</th>
+        <th>Product name</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
       <?php
              foreach ($resultSet as $row) {
       ?>
