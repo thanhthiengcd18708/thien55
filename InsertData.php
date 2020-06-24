@@ -8,9 +8,7 @@
 		<h1>Insert Product</h1>
 		<input class="signup" type="text" name="productid" placeholder="Product id">
 		<input class="signup" type="text" name="productname" placeholder="Product name">
-		<input class="signup" type="text" name="size" placeholder="Size">
-		<input class="signup" type="text" name="basicprice" placeholder="Basic price">
-		<input class="signup" type="text" name="residual" placeholder="Residual">
+		<input class="signup" type="text" name="size" placeholder="Price">
 		<input class="signup" type="submit" name="" value="submit">
     </div>
 	</form> 
@@ -29,10 +27,11 @@ if (empty(getenv("DATABASE_URL"))){
      
    $db = parse_url(getenv("DATABASE_URL"));
    $pdo = new PDO("pgsql:" . sprintf(
-                "host=
+               "host=
 
-ec2-54-159-138-67.compute-1.amazonaws.com
-;port=5432;user=rkrzoettivdipj;password=8ebcd42b31944fc146f96a2bd6ed4a0cabad45874d178c339f8d323b93b5a136;dbname=d54te445aufu0s",
+ec2-34-197-188-147.compute-1.amazonaws.com
+
+;port=5432;user=bvztajjyxcwfgb;password=95afa25f8872b3a2bf6cd1f19c1e74a4148450363e9bcecdc61a254a208ed85e;dbname=d4s6q2430j68ed",
         $db["host"],
         $db["port"],
         $db["user"],
@@ -55,7 +54,7 @@ if($pdo === false){
 //$stmt->execute();
 //$sql = "INSERT INTO student(stuid, fname, email, classname) VALUES('SV02', 'Hong Thanh','thanhh@fpt.edu.vn','GCD018')";
 $sql = "INSERT INTO product(productid, productname,size, basicprice,residual)"
-        . " VALUES('$_POST[productid]','$_POST[productname]','$_POST[size]','$_POST[basicprice]','$_POST[residual]')";
+        . " VALUES('$_POST[productid]','$_POST[productname]','$_POST[price]',)";
 $stmt = $pdo->prepare($sql);
 //$stmt->execute();
  if (is_null($_POST[productid])) {
