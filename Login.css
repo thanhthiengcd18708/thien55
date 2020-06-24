@@ -99,6 +99,7 @@ flex: 1;
 	border-radius: 24px;
 	transition: 0.25s;
 	cursor: pointer;
+		line-style:none ;
 }
 .box .home li :hover{
 	
@@ -106,7 +107,7 @@ flex: 1;
 a{
     color: white ;
     text-decoration: none;
-	line-style:none ;
+
 }
 
 
