@@ -3,6 +3,7 @@
 <body>
 
 <h1>TABLE OF INFORMATION PRODUCT </h1>
+	<link rel="stylesheet" type="text/css" href="Login.css">
 
 <?php
 ini_set('display_errors', 1);
