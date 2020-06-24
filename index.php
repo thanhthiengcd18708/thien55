@@ -22,7 +22,7 @@
         <div class="menulip">
             <ul> 
                 <li> <a href="Page1(click on home).html" >Home</a></li>
-                <li> <a href="#">Insert</a></li>
+                <li> <a href="InsertData.php">Insert</a></li>
                 <li> <a href="#">Delete</a></li>
                 <li> <a href="#">Update</a></li>
                 <li> <a href="#">View</a></li>
