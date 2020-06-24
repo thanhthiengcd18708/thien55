@@ -2,11 +2,11 @@
 <html>
 <body>
 
-<h1>DATABASE CONNECTION</h1>
+<h1>TABLE OF INFORMATION PRODUCT </h1>
 
 <?php
 ini_set('display_errors', 1);
-echo "Hello Cloud computing class 0702!";
+echo "ATN COMPANY !";
 ?>
 
 <?php
@@ -40,19 +40,18 @@ $resultSet = $stmt->fetchAll();
 echo '<p>Product Information </p>';
 
 ?>
-<div id="container">
-<table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Product ID</th>
-        <th>Product name</th>
-        <th>Price</th>
-      </tr>
-    </thead>
-    <tbody>
+<p>Sort Table Rows by Clicking on the Table Headers - Ascending and Descending (jQuery)</p>
+<div class="container">
+	
+	<div class="table">
+		<div class="table-header">
+			<div class="header__item"><a id="productid" class="filter__link" href="#">Product ID</a></div>
+			<div class="header__item"><a id="name" class="filter__link filter__link--number" href="#">Name</a></div>
+			<div class="header__item"><a id="Price" class="filter__link filter__link--number" href="#">Price</a></div>
+		</div>
+	</div>
+</div>
       <?php
-      // tạo vòng lặp 
-         //while($r = mysql_fetch_array($result)){
              foreach ($resultSet as $row) {
       ?>
    
